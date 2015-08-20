@@ -1,14 +1,63 @@
 <!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
 <html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tobi's pages of projects and programming hacks</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
 <body>
-<h1>This is my project page.</h1>
-<p>This page is currently under development...</p>
-<br>
-<h3>Short project list</h3>
-<ul>
-	<li><a href="http://github.com/tobiashoppe/promnicat/">PromniCAT</a></li>
-	<li><a href="http://github.com/tobiashoppe/stammbaum">Family Tree / Stammbaum</a></li>
-	<li><a href="http://github.com/tobiashoppe/iban-generator/">IBAN Generator</a></li>
-</ul>
+	<div class="background">
+		<div class="page">
+			<div class="logo">
+				<span> <a href="index.html"><img src="images/logo.png" alt=""></a> </span>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li class="selected">
+						<a href="index.html">Projects</a>
+					</li>
+					<li>
+						<a href="blog_entries/overview.html">Tips &amp; Tricks</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+				</ul>
+			</div>
+			<div class="body">
+				<ul>
+					<li class="promnicat">
+						<h3><a href="http://github.com/tobiashoppe/promnicat">Promnicat</a></h3>
+						<br>
+						<a href="http://github.com/tobiashoppe/promnicat"><img src="images/promnicat_logo.png" width="300" alt=""></a>						
+						<p>
+							PromniCAT is a framework to import various business process models of many business process model repositories into one generic database (therefore the "Pro" for process and "omni" in the name). This enables research on the entire collection across the boundaries of business process modeling notations.
+
+							PromniCAT is completely written in JAVA. The database used for business process model persisting is <a href="http://www.orientechnologies.com/orient-db.htm">Orient DB</a>. For business process model analysis we use <a href="http://code.google.com/p/jbpt/">jBPT</a>, a graph analysis framework.
+
+							You can get a large set of process models for evaluating your algorithms from the BPM Academic Initiative (<a href="http://bpmai.org/download/index.html">BPMAI</a>) homepage. The <a href="http://bpmai.org/download/index.html">BPMAI</a> homepage provides filters for choosing process models with desired process characteristics for your evaluation. PromniCAT offers a direct importer for the BPMAI process models to jump start your research.
+
+						</p>
+					</li>
+					<li class="familytree">
+						<h3><a href="http://github.com/tobiashoppe/stammbaum">FamilyTree</a></h3>
+						<!--  <a href="http://github.com/tobiashoppe/stammbaum"><img src="images/familytree.png" alt=""></a>-->
+						<p>
+							<b>Project under development.</b>
+						</p>
+					</li>
+					<li class="ibangenerator">
+						<h3><a href="http://github.com/tobiashoppe/iban-generator/">IBAN Generator</a></h3>
+						<br>
+						<a href="http://github.com/tobiashoppe/iban-generator/"><img src="images/ibangenerator.png" alt=""></a>
+						<p>
+							<b>Generates an IBAN from given data. </b>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
