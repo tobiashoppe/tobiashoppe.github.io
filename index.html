@@ -3,7 +3,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Tobi's pages of projects and programming hacks</title>
+	<title>Projects I am working on and summary of some programming hacks</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
@@ -27,7 +27,7 @@
 			</div>
 			<div class="body">
 				<ul>
-					<li class="promnicat">
+					<li class="projects">
 						<h3><a href="http://github.com/tobiashoppe/promnicat">Promnicat</a></h3>
 						<br>
 						<a href="http://github.com/tobiashoppe/promnicat"><img src="images/promnicat_logo.png" width="300" alt=""></a>						
@@ -40,19 +40,36 @@
 
 						</p>
 					</li>
-					<li class="familytree">
+					<li class="projects">
 						<h3><a href="http://github.com/tobiashoppe/stammbaum">FamilyTree</a></h3>
-						<!--  <a href="http://github.com/tobiashoppe/stammbaum"><img src="images/familytree.png" alt=""></a>-->
 						<p>
 							<b>Project under development.</b>
 						</p>
 					</li>
-					<li class="ibangenerator">
+					<li class="projects">
+						<h3><a href="http://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.ocl.doc%2Fhelp%2FImpactAnalyzer.html">OCL Impact Analyzer</a></h3>
+						<p>
+							When Ecore metamodels use many OCL invariants and the models constrained by these invariants grow large, re-evaluating the invariants becomes a performance challenge. As OCL expressions can navigate freely across resource boundaries, changes to a model element in one resource can easily affect invariants for model elements in other resources. To reliably catch all invalidated constraints after a change it would be necessary to re-evaluate all invariants on all their context objects regardless their resource. This does not scale sufficiently well.
+							<br>
+							The ImpactAnalyzerFactory  interface allows tool builders to efficiently determine a much smaller set of model elements on which re-evaluation of expressions is necessary after a change.
+						</p>
+					</li>
+					<li class="projects">
+						<h3><a href="http://download.eclipse.org/ocl/javadoc/6.0.0/org/eclipse/ocl/ecore/opposites/OppositeEndFinder.html">OCL Opposite End Finder for EReferences</a></h3>
+						<p>
+							The Eclipse Modeling Framework (EMF) and its meta-meta model Ecore support uni-directional and bi-directional references. It is quite common that references are defined uni-directionally only because of saving storage space or separating meta models, which is problematic when implementing Object Constraint Language (OCL) constraints that require navigation against the direction of unidirectional references.
+							<br>
+							Opposite references declared by the annotation detail <i>OppositeEndFinder.PROPERTY_OPPOSITE_ROLE_NAME_KEY</i> on an EAnnotation with source <i>EMOFExtendedMetaData.EMOF_PACKAGE_NS_URI_2_0</i> are retrieved by scanning and caching the Ecore packages that this opposite end finder is aware of at the time of the request. The set of those packages is taken to be the set of EPackages resolved by an EPackage.Registry provided to getInstance(EPackage.Registry), or the default EPackage.Registry otherwise. In particular, this won't load any Ecore bundles not yet loaded. 
+							<br>
+							Further theoretical background is provided in the paper <a href="http://journal.ub.tu-berlin.de/eceasst/article/viewFile/440/428">&quot;Navigating Across Non-Navigable Ecore References via OCL&quot;</a>.
+						</p>
+					</li>
+					<li class="projects">
 						<h3><a href="http://github.com/tobiashoppe/iban-generator/">IBAN Generator</a></h3>
 						<br>
 						<a href="http://github.com/tobiashoppe/iban-generator/"><img src="images/ibangenerator.png" alt=""></a>
 						<p>
-							<b>Generates an IBAN from given data. </b>
+							Generates an IBAN from given data.
 						</p>
 					</li>
 				</ul>

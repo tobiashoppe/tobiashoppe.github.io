@@ -124,14 +124,15 @@ p a:hover {
 .body ul li {
 	background:url(../images/separator.jpg) no-repeat right top;
 }
-.body ul li.promnicat {
+/*------------------------- Body Projects ------------------------*/
+.body ul li.projects {
 	background:url(../images/bg-first-separator.jpg) no-repeat left top;
 }
-.body ul li.promnicat h3 {
+.body ul li.projects h3 {
 	margin:0 0 0 30px;
 	padding:44px 0 0;
 }
-.body ul li.promnicat h3 a {
+.body ul li.projects h3 a {
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:25px;
 	color:#ff8a00;
@@ -142,10 +143,10 @@ p a:hover {
 	display:block;
 	margin:0;
 }
-.body ul li.promnicat h3 a:hover {
+.body ul li.projects h3 a:hover {
 	color:#fdbe36;
 }
-.body ul li.promnicat span {
+.body ul li.projects span {
 	font-family:Arial, Helvetica, sans-serif;
 	color:#838383;
 	font-size:12px;
@@ -153,15 +154,15 @@ p a:hover {
 	margin:4px 0 11px 30px;
 	display:block;
 }
-.body ul li.promnicat a {
-	margin:0 0 0 30px;
-	display:block;
+.body ul li.projects a img {
+	float: left;
+	padding: 0 20px 0 30px;
 }
-.body ul li.promnicat a img:hover {
+.body ul li.projects a img:hover {
 	filter:alpha(opacity=90);/* Needed for IE7 */
 	opacity:0.9;
 }
-.body ul li.promnicat p {
+.body ul li.projects p {
 	color:#bfbfbf;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;
@@ -170,112 +171,11 @@ p a:hover {
 	text-align:justify;
 	margin:18px 0 42px;
 }
-.body ul li.promnicat p a {
+.body ul li.projects p a {
 	display:inline;
 	margin:0;
 }
-.body ul li.familytree {
-	padding:50px 0 0;
-}
-.body ul li.familytree > a {
-	margin:0 30px 0;
-	display:block;
-	float:left;
-}
-.body ul li.familytree a img:hover {
-	filter:alpha(opacity=90);/* Needed for IE7 */
-	opacity:0.9;
-}
-.body ul li.familytree h3 {
-	margin:30px;
-}
-.body ul li.familytree h3 a {
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:25px;
-	color:#ff8a00;
-	font-weight:normal;
-	text-decoration:none;
-	line-height:30px;
-	letter-spacing:0.05em;
-}
-.body ul li.familytree h3 a:hover {
-	color:#fdbe36;
-}
-.body ul li.familytree span {
-	font-family:Arial, Helvetica, sans-serif;
-	color:#838383;
-	font-size:12px;
-	line-height:30px;
-	margin:5px 0 0 30px;
-	display:block;
-}
-.body ul li.familytree p {
-	color:#bfbfbf;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	line-height:30px;
-	padding:0 30px;
-	text-align:justify;
-	margin:0 0 33px;
-}
-.body ul li.familytree p a {
-	color:#bfbfbf;
-	display:inline;
-	margin:0;
-}
-.body ul li.familytree p a:hover {
-	color:#ff8a00;
-}
-.body ul li.ibangenerator {
-	padding:50px 0 0;
-	position:relative;
-}
-.body ul li.ibangenerator h3 {
-	margin:0 0 0 30px;
-}
-.body ul li.ibangenerator h3 a {
-	font-family:Georgia, "Times New Roman", Times, serif;
-	font-size:25px;
-	color:#ff8a00;
-	font-weight:normal;
-	text-decoration:none;
-}
-.body ul li.ibangenerator h3 a:hover {
-	color:#fdbe36;
-}
-.body ul li.ibangenerator span {
-	font-family:Arial, Helvetica, sans-serif;
-	color:#838383;
-	font-size:12px;
-	line-height:30px;
-	margin:5px 0 0 30px;
-	display:block;
-}
-.body ul li.ibangenerator p {
-	margin: 0 30px;
-	color:#bfbfbf;
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	line-height:30px;
-	text-align:justify;
-	width: 400px;
-}
-.body ul li.ibangenerator p a {
-	color:#bfbfbf;
-	display:inline;
-	margin:0;
-}
-.body ul li.ibangenerator p a:hover {
-	color:#ff8a00;
-}
-.body ul li.ibangenerator > a {
-	margin:0 0 0 30px;
-	display:block;
-}
-.body ul li.ibangenerator a img:hover {
-	filter:alpha(opacity=90);/* Needed for IE7 */
-	opacity:0.9;
-}
+/*------------------------- Body About ------------------------*/
 .body .about {
 	padding:18px 30px 0;
 	background:url(../images/separator.jpg) no-repeat right top;
@@ -299,6 +199,7 @@ p a:hover {
 	display:inline;
 	margin:0;
 }
+/*------------------------- Body Tips and Tricks ------------------------*/
 .body .blog {
 	padding:0 30px;
 	background:url(../images/bg-first-separator.jpg) no-repeat right top;
@@ -316,6 +217,15 @@ p a:hover {
 	color:#ff8a00;
 	font-weight:normal;
 	line-height:30px;
+	letter-spacing:0.05em;
+}
+.body .blog div:first-child h4 {
+	margin:28px 0 0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	color:#ff8a00;
+	font-weight:normal;
+	line-height:20px;
 	letter-spacing:0.05em;
 }
 .body .blog div:first-child span {
@@ -347,20 +257,7 @@ p a:hover {
 .body .blog div img {
 	display:block;
 }
-.body .blog div h4:first-child {
-	padding:41px 0 0;
-}
-.body .blog div h4 {
-	font-family:Arial, Helvetica, sans-serif;
-	color:#bfbfbf;
-	font-size:14px;
-	font-weight:normal;
-	text-transform:uppercase;
-	margin:0;
-	padding:30px 0 0;
-	line-height:30px;
-	letter-spacing:0.05em;
-}
+
 .body .blog div ul {
 	list-style:disc;
 	color:#bfbfbf;
@@ -368,17 +265,15 @@ p a:hover {
 }
 .body .blog div ul li {
 	background:none;
+	margin: 0px 0px 0px 25px;
 }
-.body .blog div ul li p {
+.body .blog div ul li a {
+	color:#bfbfbf;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;
 	line-height:30px;
-	margin: 0;
+	text-align:justify;
 }
-.body .blog div ul li p a {
-	color:#bfbfbf;
-	text-decoration:none;
-}
-.body .blog div ul li p a:hover {
+.body .blog div ul li a:hover {
 	text-decoration:underline;
 }
