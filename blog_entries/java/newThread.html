@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>How to create a new Thread in Java</title>
+	<link rel="stylesheet" href="../../css/style.css" type="text/css">
+	<link rel="stylesheet" href="../../codeHighlighter/xcode.css">
+	<script src="../../codeHighlighter/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div class="background">
+		<div class="page">
+			<div class="logo">
+				<span> <a href="../../index.html"><img src="../../images/logo.png" alt=""></a> </span>
+			</div>
+			<div class="sidebar">
+				<ul>
+					<li>
+						<a href="../../index.html">Projects</a>
+					</li>
+					<li class="selected">
+						<a href="../overview.html">Tips &amp; Tricks</a>
+					</li>
+					<li>
+						<a href="../../about.html">About</a>
+					</li>
+				</ul>
+			</div>
+			<div class="body">
+				<div class="blog">
+					<div>
+						<h3>How to create a new Thread in Java</h3>
+						<p>
+							The class <i><b>MyThread</b></i> extends the original <i><b>Thread</b></i> class. The important part is the <i><b>run</b></i> method. It is called when a new thread is started. In case of the example only a local variable is changed and the result is printed to the console.
+						</p>
+						<pre>
+							<code class="java">
+public class MyThread extends Thread implements Runnable {
+
+	private int threadParam;
+	
+	public A(int param) {
+		this.threadParam = param;
+	}
+	
+	@Override
+	public void run() {
+		//this stuff is executed in a new thread
+		this.threadParam += 10;
+		System.out.println(this.toString() + this.threadParam);
+	}
+
+	public int getResult() {
+		return this.threadParam;
+	}
+}
+							</code>
+						</pre>
+						<p>
+							The class <i><b>EntryPoint</b></i> shown below contains the main-method initializing two instances of the new thread class <i><b>MyThread</b></i>. Starting an instance results in executing the code of the <i><b>run</b></i> method of the thread instance at hand.
+							<br>
+							Joining a thread is important in those cases where you need to wait for the started thread to be finished. The results of the given example show, that the first thread is not joined and the retrieved result is incorrect, because in most cases the line getting the result is executed before the new thread is executed.
+							<br>
+							Whereby the main thread joins the second one and waits for it&prime;s termination before the result is retrieved. 
+						</p>
+						<pre>
+							<code class="java">
+public class EntryPoint {
+
+	/**
+	 * Creates two new {@link Thread}s and shows how to start them 
+	 * and why joining them is important.
+	 */
+	public static void main(String[] args) throws InterruptedException {
+		int param = 1234;
+		//initialize both threads
+		MyThread firstThread = new MyThread(param);
+		MyThread secondThread = new MyThread(param);
+		firstThread.start();
+		secondThread.start();
+		
+		// Without joining firstThread the execution of this is faster 
+		// than those of firstThread and we may get corrupt results
+//		firstThread.join();
+		System.out.println("First: " + firstThread.getResult());
+		secondThread.join();
+		System.out.println("Second: " + secondThread.getResult());
+	}
+
+}
+							</code>
+						</pre>
+					</div>
+					<div class="back">
+						<a href="../overview.html">Back to overview</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -187,6 +187,15 @@ p a:hover {
 	font-weight:normal;
 	margin:27px 0 0;
 }
+.body .about h4 {
+	margin:28px 0 20px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	color:#ff8a00;
+	font-weight:normal;
+	line-height:20px;
+	letter-spacing:0.05em;
+}
 .body .about p {
 	color:#bfbfbf;
 	font-family:Arial, Helvetica, sans-serif;
@@ -206,12 +215,12 @@ p a:hover {
 	overflow:hidden;
 }
 .body .blog div:first-child {
-	width:501px;
+	width:750px;
 	margin:0;
 	padding:0;
 }
-.body .blog div:first-child h3 {
-	margin:42px 0 0;
+.body .blog div h3 {
+	margin:42px 0 30px 0;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:25px;
 	color:#ff8a00;
@@ -219,7 +228,7 @@ p a:hover {
 	line-height:30px;
 	letter-spacing:0.05em;
 }
-.body .blog div:first-child h4 {
+.body .blog div h4 {
 	margin:28px 0 0;
 	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:18px;
@@ -228,7 +237,7 @@ p a:hover {
 	line-height:20px;
 	letter-spacing:0.05em;
 }
-.body .blog div:first-child span {
+.body .blog div a {
 	font-family:Arial, Helvetica, sans-serif;
 	color:#838383;
 	font-size:12px;
@@ -236,28 +245,23 @@ p a:hover {
 	margin:6px 0 11px;
 	display:block;
 }
-.body .blog div:first-child p {
+.body .blog div a:hover {
+	text-decoration:underline;
+}
+.body .blog div p {
 	color:#bfbfbf;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;
-	line-height:30px;
+	line-height:24px;
 	text-align:justify;
-	margin:20px 0 30px;
 }
-.body .blog div:first-child p a {
+.body .blog div p a {
 	display:inline;
 	margin:0;
-}
-.body .blog div {
-	float: left;
-	margin: 0 0 0 43px;
-	padding: 66px 0 0;
-	width: 205px;
 }
 .body .blog div img {
 	display:block;
 }
-
 .body .blog div ul {
 	list-style:disc;
 	color:#bfbfbf;
@@ -276,4 +280,13 @@ p a:hover {
 }
 .body .blog div ul li a:hover {
 	text-decoration:underline;
+}
+.body .blog .back a {
+	margin:10px 0 10px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+	color:#ff8a00;
+	font-weight:normal;
+	line-height:20px;
+	letter-spacing:0.05em;
 }
